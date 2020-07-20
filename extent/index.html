@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Spatial Extent Demo</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
@@ -49,11 +49,12 @@
                         </div>
                     </div>
                     <p class="text-justify">The exact methodology and technique to synthesize the perception of spatial extent is confidential as of yet, because of its commercial viability. Once the technique becomes common, this section will be updated detailing the technique
-                        that can be used for synthesizing a varying degree of spatial extent.<br><br>Below are some audio samples which are processed with a varying degree of spatial extent. The reader can gain a sense of the varying degree of spatial
-                        extent. <br><br>Note: Use of headphones is recommended to get the best possible listening experience.</p>
+                        that can be used for synthesizing a varying degree of spatial extent.<br><br>Below are some audio samples which are processed with a varying degree of spatial extent. <br><br>Note: Use of headphones is recommended to get the best possible listening experience.</p>
                     <div class="text">
                         <h2>Processed demo audio samples</h2>
-                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)
+<br> Each excerpt is processed with 5 extent levels: 1) no extent 2) small extent 3) medium extent 4) large extent 5) very large extent
+                        </p>
                         <h5>Choir Excerpt</h5>
                         <p>
                           <div class="choir">
@@ -76,11 +77,63 @@
 
                         </p>
                         <h5>Piano Excerpt</h5>
-                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <p>
+                          <div class="piano">
+                              <ts-track title="Piano no extent">
+                                  <ts-source src="audio/piano/piano_noExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Piano small extent">
+                                  <ts-source src="audio/piano/piano_smallExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Piano medium extent">
+                                  <ts-source src="audio/piano/piano_mediumExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Piano large extent">
+                                  <ts-source src="audio/piano/piano_largeExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Piano very large extent">
+                                  <ts-source src="audio/piano/piano_veryLargeExt.mp3"></ts-source>
+                              </ts-track>
+                          </div>
+                        </p>
                         <h5>Guitar Excerpt</h5>
-                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <p>
+                          <div class="guitar">
+                              <ts-track title="Guitar no extent">
+                                  <ts-source src="audio/guitar/guitar_noExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Guitar small extent">
+                                  <ts-source src="audio/guitar/guitar_smallExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Guitar medium extent">
+                                  <ts-source src="audio/guitar/guitar_mediumExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Guitar large extent">
+                                  <ts-source src="audio/guitar/guitar_largeExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Guitar very large extent">
+                                  <ts-source src="audio/guitar/guitar_veryLargeExt.mp3"></ts-source>
+                              </ts-track>
+                          </div>
+                        </p>
                         <h5>Violin Excerpt</h5>
-                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <p><div class="violin">
+                            <ts-track title="Violin no extent">
+                                <ts-source src="audio/violin/violin_noExt.mp3"></ts-source>
+                            </ts-track>
+                            <ts-track title="Violin small extent">
+                                <ts-source src="audio/violin/violin_smallExt.mp3"></ts-source>
+                            </ts-track>
+                            <ts-track title="Violin medium extent">
+                                <ts-source src="audio/violin/violin_mediumExt.mp3"></ts-source>
+                            </ts-track>
+                            <ts-track title="Violin large extent">
+                                <ts-source src="audio/violin/violin_largeExt.mp3"></ts-source>
+                            </ts-track>
+                            <ts-track title="Violin very large extent">
+                                <ts-source src="audio/violin/violin_veryLargeExt.mp3"></ts-source>
+                            </ts-track>
+                        </div></p>
                         <figure></figure>
                         <p></p>
                     </div>
@@ -98,6 +151,9 @@
 };
         jQuery(document).ready(function() {
             jQuery(".choir").trackSwitch(settings); // All other players are default
+            jQuery(".piano").trackSwitch(settings);
+            jQuery(".guitar").trackSwitch(settings);
+            jQuery(".violin").trackSwitch(settings);
         });
     </script>
 </body>
