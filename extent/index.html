@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/trackswitch.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-primary navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">Spatial Extent Demo Site</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
+        </div>
+    </nav>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Investigations on Modelling Spatial Extent of Sound Sources in Virtual Reality<br></h1>
+                        <p class="text-center"> </p>
+                    </div>
+                    <div class="text">
+                        <h2>An overview of spatial extent</h2>
+                        <p class="text-justify">The human auditory system has an admirable ability of sensing sounds which have an audible<br>impression of being spatially extended in space. Perceived horizontal and vertical width of an auditory event is&nbsp; called spatial
+                            extent. It assists in rough description of location and size of sound objects. The perception of sound enveloping us, as if we were sitting in a live concert or orchestra, is something we all enjoy and desire.<br><br>However,
+                            the perception of spatial extent is crucial for visually impaired people, as it helps them to gain a sense of auditory space.<br></p>
+                        <figure></figure>
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <figure class="figure"><img class="img-fluid figure-img" src="assets/img/far_obj.png">
+                                <figcaption class="figure-caption">A source is perceived smaller like a point source when its far away from the listener</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col text-center">
+                            <figure class="figure"><img class="img-fluid figure-img" src="assets/img/near_obj.png">
+                                <figcaption class="figure-caption">A source is perceived broader when its nearer to the listener</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <p class="text-justify">The exact methodology and technique to synthesize the perception of spatial extent is confidential as of yet, because of its commercial viability. Once the technique becomes common, this section will be updated detailing the technique
+                        that can be used for synthesizing a varying degree of spatial extent.<br><br>Below are some audio samples which are processed with a varying degree of spatial extent. The reader can gain a sense of the varying degree of spatial
+                        extent. <br><br>Note: Use of headphones is recommended to get the best possible listening experience.</p>
+                    <div class="text">
+                        <h2>Processed demo audio samples</h2>
+                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <h5>Choir Excerpt</h5>
+                        <p>
+                          <div class="choir">
+                              <ts-track title="Choir no extent">
+                                  <ts-source src="audio/choir/choir_noExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Choir small extent">
+                                  <ts-source src="audio/choir/choir_smallExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Choir medium extent">
+                                  <ts-source src="audio/choir/choir_mediumExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Choir large extent">
+                                  <ts-source src="audio/choir/choir_largeExt.mp3"></ts-source>
+                              </ts-track>
+                              <ts-track title="Choir very large extent">
+                                  <ts-source src="audio/choir/choir_veryLargeExt.mp3"></ts-source>
+                              </ts-track>
+                          </div>
+
+                        </p>
+                        <h5>Piano Excerpt</h5>
+                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <h5>Guitar Excerpt</h5>
+                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <h5>Violin Excerpt</h5>
+                        <p>Processed samples with varying degree of spatial extent is listed here for music excerpts from three instruments namely: Guitar, Organ and Piano. The fourth excerpt is that of a choir. The excerpts are taken from EBU SQAM CD. (https://tech.ebu.ch/publications/sqamcd)</p>
+                        <figure></figure>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/trackswitch.js"></script>
+    <script type="text/javascript">
+    var settings = {
+    onlyradiosolo: true,
+    repeat: true,
+};
+        jQuery(document).ready(function() {
+            jQuery(".choir").trackSwitch(settings); // All other players are default
+        });
+    </script>
+</body>
+
+</html>
